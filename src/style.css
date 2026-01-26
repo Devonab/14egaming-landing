@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+:root {
+            --primary-gold: #e2b714;
+            --bg-dark: #080808;
+            --card-bg: rgba(15, 15, 15, 0.4);
+            --border-color: rgba(255, 255, 255, 0.06);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-dark);
+            color: #fafafa;
+            overflow-x: hidden;
+        }
+
+        .hero-gradient-text {
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bento-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .bento-card:hover {
+            border-color: rgba(226, 183, 20, 0.4);
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 20px 40px -20px rgba(0,0,0,0.5);
+        }
+
+        .grid-mesh {
+            position: fixed;
+            inset: 0;
+            background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 0);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .spotlight {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(226, 183, 20, 0.07) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(100px);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Animation Barre de progression */
+        #progressBar {
+            transition: width 0.1s ease-out;
+        }
+
+        .marquee-container {
+    width: 100%;
+    /* Gradient de fondu sur les côtés */
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+/* Animations pour le fond du Hero */
+@keyframes scrollDown {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+.animate-scroll-down {
+    animation: scrollDown 40s linear infinite;
+}
+
+.animate-scroll-up {
+    animation: scrollUp 40s linear infinite;
+}
+
+/* Optionnel : Ajoute un léger flou aux vignettes pour focus sur le texte */
+.animate-scroll-down div, .animate-scroll-up div {
+    filter: grayscale(0.5) brightness(0.7) blur(1px);
+    transition: filter 0.5s ease;
+}
+
+.animate-scroll-down div:hover, .animate-scroll-up div:hover {
+    filter: grayscale(0) brightness(1) blur(0px);
+}
+
+
+#marquee-track {
+    will-change: transform; /* Optimisation GPU */
+    display: flex;
+    width: max-content;
+}
+
+.game-item {
+    user-select: none;
+}
+
+/* Texture de points plus visible */
+.bg-dot-grid {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+    background-size: 24px 24px;
+}
+
+/* La carte "Double Frame" */
+.bento-outer {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 8px; /* L'écart entre les deux bordures */
+    transition: all 0.4s ease;
+}
+
+.bento-inner {
+    background: rgba(10, 10, 10, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    height: 100%;
+    width: 100%;
+}
+
+.bento-outer:hover {
+    border-color: rgba(226, 183, 20, 0.2);
+    background: rgba(226, 183, 20, 0.02);
+}
+
+/* Variantes pour les cartes de connexion */
+.join-card {
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.join-card:hover.discord {
+    border-color: rgba(88, 101, 242, 0.4);
+    background: rgba(88, 101, 242, 0.05);
+}
+
+.join-card:hover.teamspeak {
+    border-color: rgba(37, 128, 195, 0.4);
+    background: rgba(37, 128, 195, 0.05);
+}
