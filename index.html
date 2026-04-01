@@ -29,8 +29,8 @@
     <meta name="theme-color" content="#080808">
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script type="module" crossorigin src="/assets/index-LPf_pEV4.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BzLszV1D.css">
+    <script type="module" crossorigin src="/assets/index-CEFI8AT9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BnRM4eI2.css">
   </head>
   <body class="antialiased">
     <div class="grid-mesh"></div>
@@ -39,7 +39,7 @@
       <div class="bg-black/60 backdrop-blur-md border border-white/10 rounded-2xl px-6 py-3 flex justify-between items-center shadow-2xl">
        <a href="/" class="flex items-center gap-3">
           <div class="w-7 h-7 flex items-center justify-center">
-            <img src="/14e_logo.png" />
+            <img src="/14e_logo.png" alt="Logo 14e Gaming" />
           </div>
           <span class="text-lg uppercase">
             <span class="font-extrabold">14e</span> Gaming </span>
@@ -49,11 +49,12 @@
           <a href="#about" class="hover:text-white transition-all">Histoire</a>
           <a href="#stats" class="hover:text-white transition-all">En chiffres</a>
         </div>
-        <a href="#join" class="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-xl text-[11px] font-black uppercase hover:bg-yellow-500 transition-colors">Nous rejoindre <i data-lucide="user-pen" class="hidden sm:block w-4 h-4"></i>
+        <a href="#join" class="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-xl text-[11px] font-black uppercase hover:bg-yellow-500 transition-colors">Nous rejoindre <i data-lucide="user-pen" aria-hidden="true" class="hidden sm:block w-4 h-4"></i>
         </a>
       </div>
     </nav>
-    <section id="hero" class="relative min-h-[75vh] flex flex-col items-center justify-center px-6 pt-32 overflow-hidden">
+    <main>
+      <section id="hero" class="relative min-h-[75vh] flex flex-col items-center justify-center px-6 pt-32 overflow-hidden">
       <div class="absolute inset-0 z-[-2] flex justify-center gap-4 opacity-40 pointer-events-none">
         <div class="flex flex-col gap-4 animate-scroll-down">
           <div class="w-48 h-64 rounded-2xl bg-cover bg-center" style="background-image: url('/vignettes/thumb-01.jpg')"></div>
@@ -89,15 +90,15 @@
       </h1>
       <p class="max-w-2xl text-gray-400 text-lg md:text-xl text-center mb-12 font-medium leading-relaxed"> Issus du 14e Régiment sur <span class="italic">Mount & Blade : Warband</span>, le 14e Gaming est une communauté française de joueurs en ligne sur PC qui se retrouvent pour jouer à une variété de jeux dans un esprit communautaire. </p>
       <div class="flex flex-col sm:flex-row gap-5">
-        <a href="#join" class="bg-white text-black text-center px-8 py-4 rounded-2xl font-bold flex items-center gap-3 hover:scale-105 transition-transform"> Nous rejoindre <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <a href="#join" class="bg-white text-black text-center px-8 py-4 rounded-2xl font-bold flex items-center gap-3 hover:scale-105 transition-transform"> Nous rejoindre <i data-lucide="chevron-right" class="w-4 h-4" aria-hidden="true"></i>
         </a>
         <a href="#stats" class="bg-white/5 border text-center border-white/10 backdrop-blur-xl px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all"> En chiffres </a>
       </div>
     </section>
-    <section id="about" class="my-12 md:mt-12 md:mb-32">
+    <section id="about" class="my-12 md:mt-12 md:mb-32" aria-labelledby="story-title">
       <div class="flex flex-wrap md:flex-nowrap items-center gap-3 max-w-7xl mx-auto py-12 p-6 md:p-12 relative">
         <div class="md:w-2/4">
-          <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-4 text-white"> Un peu d'histoire </h2>
+          <h2 id="story-title" class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-4 text-white"> Un peu d'histoire </h2>
           <div class="text-gray-500 md:text-lg font-medium space-y-2">
             <p>Fondé à l’origine sur <span class="italic">Mount & Blade : Warband</span> et son mod <span class="italic">Mount & Musket</span>, le 14e Gaming incarnait le 14e Régiment d’Infanterie de ligne des guerres napoléoniennes. Au fil des années, le groupe s’est forgé une solide réputation grâce à sa participation à de nombreux événements et tournois. </p>
             <p>Par la suite, la communauté a naturellement migré vers Napoleonic Wars, avant d’envisager un développement plus orienté rôle-play à l’approche de la sortie de Mount & Blade II : Bannerlord. Ce nouveau projet mettait en scène le duché de Normandie sous le règne de Robert le Magnifique. Toutefois, le lancement tardif du jeu et des promesses partiellement tenues ont conduit le 14e à repenser son évolution.</p>
@@ -105,21 +106,21 @@
           </div>
         </div>
         <div class="md:w-2/4">
-          <img src="/img-histoire.jpg" widht="662" height="1036" alt="Histoire du 14e" />
+          <img src="/img-histoire.jpg" width="662" height="1036" alt="Histoire du 14e" />
         </div>
       </div>
     </section>
-    <section id="stats" class="my-12 md:my-32 px-6">
+    <section id="stats" class="my-12 md:my-32 px-6" aria-labelledby="stats-title">
       <div class="max-w-7xl mx-auto border border-white/5 rounded-[48px] bg-dot-grid p-6 md:p-12 relative">
         <div class="max-w-2xl mb-16 px-4">
-          <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-4 text-white"> Le 14e en chiffre </h2>
+          <h2 id="stats-title" class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-4 text-white"> Le 14e en chiffre </h2>
           <p class="text-gray-500 text-lg font-medium">Car en plus de 10 ans, il s'en est passé des choses...</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6">
           <div class="md:col-span-2 lg:col-span-3 bento-outer rounded-4xl">
             <div class="bento-inner rounded-3xl p-8">
               <div class="mb-6 inline-flex p-3 rounded-xl bg-white/5 border border-white/10 text-yellow-500">
-                <i data-lucide="users" class="w-6 h-6"></i>
+                <i data-lucide="users" class="w-6 h-6" aria-hidden="true"></i>
               </div>
               <h3 class="text-5xl font-black mb-2 tracking-tighter text-white">+200</h3>
               <p class="text-gray-400 font-medium">Membres actifs. Certains le sont, d'autres un petit peu moins.</p>
@@ -142,7 +143,7 @@
           <div class="md:col-span-2 lg:col-span-2 bento-outer rounded-4xl">
             <div class="bento-inner rounded-3xl p-8">
               <div class="mb-6 inline-flex p-3 rounded-xl bg-white/5 border border-white/10 text-orange-400">
-                <i data-lucide="coffee" class="w-6 h-6"></i>
+                <i data-lucide="coffee" class="w-6 h-6" aria-hidden="true"></i>
               </div>
               <h3 class="text-3xl font-black mb-2 tracking-tighter text-white">18k Litres</h3>
               <p class="text-gray-500 text-sm">Consommation estimée de boissons cafféiné.</p>
@@ -151,7 +152,7 @@
           <div class="md:col-span-2 lg:col-span-2 bento-outer rounded-4xl">
             <div class="bento-inner rounded-3xl p-8 border-l-2 border-l-yellow-500/30">
               <div class="mb-6 inline-flex p-3 rounded-xl bg-white/5 border border-white/10 text-yellow-500">
-                <i data-lucide="clock" class="w-6 h-6"></i>
+                <i data-lucide="clock" class="w-6 h-6" aria-hidden="true"></i>
               </div>
               <h3 class="text-3xl font-black mb-2 tracking-tighter text-white">450k+</h3>
               <p class="text-gray-500 text-sm">Heures de jeu cumulées sur Steam. Estimation fiable à 100%.</p>
@@ -160,7 +161,7 @@
           <div class="md:col-span-4 lg:col-span-2 bento-outer rounded-4xl">
             <div class="bento-inner rounded-3xl p-8 bg-linear-to-br from-white/2 to-transparent">
               <div class="mb-6 inline-flex p-3 rounded-xl bg-white/5 border border-white/10 text-white">
-                <i data-lucide="server" class="w-6 h-6"></i>
+                <i data-lucide="server" class="w-6 h-6" aria-hidden="true"></i>
               </div>
               <h3 class="text-3xl font-black mb-2 tracking-tighter text-white">0.0ms</h3>
               <p class="text-gray-500 text-sm">Latence cérébrale moyenne de nos membres.</p>
@@ -169,7 +170,7 @@
         </div>
       </div>
     </section>
-    <section id="games" class="py-20 border-y border-white/5 bg-white/1 overflow-hidden">
+    <section id="games" aria-label="Nos jeux principaux">
       <div class="max-w-7xl mx-auto px-6 mb-12">
         <p class="text-center text-[10px] font-black uppercase tracking-[0.4em] text-gray-500">On nous retrouve souvent sur :</p>
       </div>
@@ -215,7 +216,7 @@
         </h2>
         <p class="text-gray-400 text-lg mb-16 max-w-xl mx-auto leading-relaxed font-medium"> Envie de rejoindre notre communauté? Venez et vous aussi portez fierement le tag <span class="text-white font-bold">[14e]</span> ! </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <a href="https://discord.gg/kUBPPZjDHt" target="_blank" class="bento-outer rounded-4xl join-card group">
+          <a href="https://discord.gg/kUBPPZjDHt" target="_blank" class="bento-outer rounded-4xl join-card group" aria-label="Rejoindre notre Discord (ouvre un nouvel onglet)">
             <div class="bento-inner rounded-3xl p-8 flex flex-col items-center gap-4">
               <div class="w-14 h-14 rounded-2xl bg-[#5865F2]/10 border border-[#5865F2]/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-[#5865F2]" viewBox="0 0 24 24">
@@ -225,7 +226,7 @@
               <span class="text-white font-bold tracking-tight">Rejoindre Discord</span>
             </div>
           </a>
-          <a href="ts3server://94.250.223.21:15150" class="bento-outer rounded-4xl join-card group">
+          <a href="ts3server://94.250.223.21:15150" class="bento-outer rounded-4xl join-card group" aria-label="Rejoindre server TeamSpeak (ouvre l'application TeamSpeak)">
             <div class="bento-inner rounded-3xl p-8 flex flex-col items-center gap-4">
               <div class="w-14 h-14 rounded-2xl bg-[#2580C3]/10 border border-[#2580C3]/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-[#2580C3]" viewBox="0 0 32 32">
@@ -238,11 +239,12 @@
         </div>
       </div>
     </section>
+    </main>
     <footer class="py-20 border-t border-white/5">
       <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row hustify-center md:justify-between items-center gap-8">
         <a href="/" class="flex items-center gap-3">
           <div class="w-7 h-7 flex items-center justify-center">
-            <img src="/14e_logo.png" />
+            <img src="/14e_logo.png" alt="Logo 14e Gaming" />
           </div>
           <span class="text-lg uppercase">
             <span class="font-extrabold">14e</span> Gaming </span>
@@ -250,6 +252,6 @@
         <p class="text-gray-600 text-[10px] font-bold uppercase tracking-widest">&copy; 2011- <span id="current-year"></span> Design par Gryfon
         </p>
       </div>
-    </footer>
+    </footer>
   </body>
 </html>
